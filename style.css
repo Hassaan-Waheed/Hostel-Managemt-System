@@ -1,0 +1,47 @@
+body
+{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.container
+{
+    position: relative;
+    width: 1230px;
+    height: 300px;
+    margin: 240px auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.container .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background:lightblue;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;   
+}
+
+.container.box.icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(2, 2, 154);
+    transition: 0.5s;
+    z-index: 1;
+
+}
+.container.box.icon:hover
+{
+    transition: transform .2s;
+    transform: scale(1.5);
+}
